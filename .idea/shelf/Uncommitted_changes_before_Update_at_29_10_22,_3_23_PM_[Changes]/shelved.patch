@@ -1,0 +1,30 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"c1daeb42-1111-46b7-b272-2631479f1314\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Controladores/ControladorCandidato.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Controladores/ControladorCandidato.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Controladores/ControladorPartido.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Controladores/ControladorPartido.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Repositorios/RepositorioPartido.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Repositorios/RepositorioPartido.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2GhIY1mznTF7uTUfcW5TCOS8Kf4\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"3cd12754-f529-47b8-bca8-02852fb4dc8b\" name=\"Changes\" comment=\"\" />\n      <created>1666834432862</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1666834432862</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 48775d0fe9a6d863391dbb6f7aed72012d15088e)
++++ b/.idea/workspace.xml	(date 1667074446147)
+@@ -3,10 +3,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="c1daeb42-1111-46b7-b272-2631479f1314" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Controladores/ControladorPartido.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorPartido.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -44,7 +40,7 @@
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="3cd12754-f529-47b8-bca8-02852fb4dc8b" name="Changes" comment="" />
++      <changelist id="c1daeb42-1111-46b7-b272-2631479f1314" name="Changes" comment="" />
+       <created>1666834432862</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />

@@ -4,6 +4,7 @@ from Modelos.Partido import Partido
 
 class ControladorPartido():
     def __init__(self):
+        print("Creando Controlador Partido")
         self.repositorioPartido = RepositorioPartido()
 
     def index(self):
