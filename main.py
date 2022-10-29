@@ -7,14 +7,19 @@ from waitress import serve
 import pymongo
 import certifi  
 from Controladores.ControladorCandidato import ControladorCandidato
+from Controladores.ControladorPartido import ControladorPartido
 from Controladores.ControladorMesa import ControladorMesa
 
 
 controladorCandidato = ControladorCandidato()
+controladorPartido = ControladorPartido()
 controladorMesa = ControladorMesa()
+
+
 
 app = Flask(__name__)
 cors = CORS(app)
+
 
 def loadFileConfig():
     with open('config.json') as f:
@@ -59,10 +64,14 @@ def modificarCandidato(id):
 def eliminarCandidato(id):
     json = controladorCandidato.delete(id)
     return jsonify(json)
+    
+@app.route("/candidatos/<string:id>/partidos/<string:id_partido>", methods=['PUT'])
+def asignarPartidoACandidato(id, id_partido):
+    json= controladorCandidato.asignarPartido(id,id_partido)
+    return jsonify(json)
 
 
-###############################################################
-
+'''Mesas'''
 
 @app.route("/mesa",methods=['GET'])
 def getMesas():
@@ -96,7 +105,41 @@ def eliminarMesa(id):
     return jsonify(json)
 
 
-###################
+'''Partido'''
+
+
+@app.route("/partido", methods=['GET'])
+def getPartido():
+    json = controladorPartido.index()
+    return jsonify(json)
+
+
+@app.route("/partido", methods=['POST'])
+def crearPartido():
+    data = request.get_json()
+    json = controladorPartido.create(data)
+    return jsonify(json)
+
+
+@app.route("/partido/<string:id>", methods=['GET'])
+def getOnePartido(id):
+    json = controladorPartido.show(id)
+    return jsonify(json)
+
+
+@app.route("/partido/<string:id>", methods=['PUT'])
+def modificarPartido(id):
+    data = request.get_json()
+    json = controladorPartido.update(id, data)
+    return jsonify(json)
+
+
+@app.route("/partido/<string:id>", methods=['DELETE'])
+def eliminarPartidonto(id):
+    json = controladorPartido.delete(id)
+    return jsonify(json)
+
+
 if __name__ == '__main__':
     dataConfig = loadFileConfig()
     print("Server running : " + "http://" + dataConfig["url-backend"] + ":" + str(dataConfig["port"]))

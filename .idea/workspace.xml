@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="8cefd212-2071-4ac1-b2e0-e67174357fb0" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Controladores/ControladorMesa.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Modelos/Mesa.py" afterDir="false" />
@@ -8,6 +9,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/MIS-Registraduria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MIS-Registraduria.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+    <list default="true" id="c1daeb42-1111-46b7-b272-2631479f1314" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controladores/ControladorPartido.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorPartido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +36,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Gek2Xc5pklku8yuSS6T0ROmdL4" />
+  <component name="ProjectId" id="2GhIY1mznTF7uTUfcW5TCOS8Kf4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -44,6 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -77,14 +86,15 @@
       </list>
     </recent_temporary>
   </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8cefd212-2071-4ac1-b2e0-e67174357fb0" name="Changes" comment="" />
-      <created>1666756229426</created>
+      <changelist id="3cd12754-f529-47b8-bca8-02852fb4dc8b" name="Changes" comment="" />
+      <created>1666834432862</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666756229426</updated>
+      <updated>1666834432862</updated>
     </task>
     <servers />
   </component>
