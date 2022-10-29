@@ -15,6 +15,7 @@ controladorPartido = ControladorPartido()
 app = Flask(__name__)
 cors = CORS(app)
 
+
 def loadFileConfig():
     with open('config.json') as f:
         data = json.load(f)
@@ -59,29 +60,44 @@ def eliminarCandidato(id):
     json = controladorCandidato.delete(id)
     return jsonify(json)
 
+
+@app.route("/candidatos/<string:id>/partidos/<string:id_partido>", methods=['PUT'])
+def asignarPartidoACandidato(id, id_partido):
+    json= controladorCandidato.asignarPartido(id,id_partido)
+    return jsonify(json)
+
 '''Partido'''
 
-@app.route("/partido",methods=['GET'])
+
+@app.route("/partido", methods=['GET'])
 def getPartido():
-    json=controladorPartido.index()
+    json = controladorPartido.index()
     return jsonify(json)
-@app.route("/partido",methods=['POST'])
+
+
+@app.route("/partido", methods=['POST'])
 def crearPartido():
     data = request.get_json()
-    json=controladorPartido.create(data)
+    json = controladorPartido.create(data)
     return jsonify(json)
-@app.route("/partido/<string:id>",methods=['GET'])
+
+
+@app.route("/partido/<string:id>", methods=['GET'])
 def getOnePartido(id):
-    json=controladorPartido.show(id)
+    json = controladorPartido.show(id)
     return jsonify(json)
-@app.route("/partido/<string:id>",methods=['PUT'])
+
+
+@app.route("/partido/<string:id>", methods=['PUT'])
 def modificarPartido(id):
     data = request.get_json()
-    json=controladorPartido.update(id,data)
+    json = controladorPartido.update(id, data)
     return jsonify(json)
-@app.route("/partido/<string:id>",methods=['DELETE'])
+
+
+@app.route("/partido/<string:id>", methods=['DELETE'])
 def eliminarPartidonto(id):
-    json=controladorPartido.delete(id)
+    json = controladorPartido.delete(id)
     return jsonify(json)
 
 
