@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cefd212-2071-4ac1-b2e0-e67174357fb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Repositorios/InterfaceRepositorio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repositorios/RepositorioCandidato.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
