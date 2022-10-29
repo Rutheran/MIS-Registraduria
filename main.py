@@ -7,9 +7,10 @@ from waitress import serve
 import pymongo
 import certifi
 from Controladores.ControladorCandidato import ControladorCandidato
-
+from Controladores.ControladorPartido import ControladorPartido
 
 controladorCandidato = ControladorCandidato()
+controladorPartido = ControladorPartido()
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -56,6 +57,31 @@ def modificarCandidato(id):
 @app.route("/candidatos/<string:id>", methods=['DELETE'])
 def eliminarCandidato(id):
     json = controladorCandidato.delete(id)
+    return jsonify(json)
+
+'''Partido'''
+
+@app.route("/partido",methods=['GET'])
+def getPartido():
+    json=controladorPartido.index()
+    return jsonify(json)
+@app.route("/partido",methods=['POST'])
+def crearPartido():
+    data = request.get_json()
+    json=controladorPartido.create(data)
+    return jsonify(json)
+@app.route("/partido/<string:id>",methods=['GET'])
+def getOnePartido(id):
+    json=controladorPartido.show(id)
+    return jsonify(json)
+@app.route("/partido/<string:id>",methods=['PUT'])
+def modificarPartido(id):
+    data = request.get_json()
+    json=controladorPartido.update(id,data)
+    return jsonify(json)
+@app.route("/partido/<string:id>",methods=['DELETE'])
+def eliminarPartidonto(id):
+    json=controladorPartido.delete(id)
     return jsonify(json)
 
 
