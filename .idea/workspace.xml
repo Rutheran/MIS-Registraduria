@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cd12754-f529-47b8-bca8-02852fb4dc8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controladores/ControladorPartido.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelos/Partido.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MIS-Registraduria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MIS-Registraduria.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c1daeb42-1111-46b7-b272-2631479f1314" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorCandidato.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controladores/ControladorPartido.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/ControladorPartido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repositorios/RepositorioPartido.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GhIY1mznTF7uTUfcW5TCOS8Kf4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
