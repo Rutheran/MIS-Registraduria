@@ -39,6 +39,7 @@ class ControladorMesa():
     """
     Relación Mesa y Partido
     """
+
     def asignarPartido(self, id, id_partido):
         mesaActual = Mesa(self.repositorioMesa.findById(id))
         partidoActual = Partido(self.repositorioPartido.findById(id_partido))

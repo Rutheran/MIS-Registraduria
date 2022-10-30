@@ -16,7 +16,6 @@ controladorPartido = ControladorPartido()
 controladorMesa = ControladorMesa()
 
 
-
 app = Flask(__name__)
 cors = CORS(app)
 
