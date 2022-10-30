@@ -40,6 +40,8 @@ def getCandidatos():
     return jsonify(json)
 
 
+'''Candidatos'''
+
 @app.route("/candidatos", methods=['POST'])
 def crearCandidato():
     data = request.get_json()
@@ -102,6 +104,11 @@ def modificarMesa(id):
 @app.route("/mesa/<string:id>",methods=['DELETE'])
 def eliminarMesa(id):
     json=controladorMesa.delete(id)
+    return jsonify(json)
+
+@app.route("/mesa/<string:id>/partidos/<string:id_partido>", methods=['PUT'])
+def asignarPartidoAMesa(id, id_partido):
+    json= controladorMesa.asignarPartido(id,id_partido)
     return jsonify(json)
 
 
