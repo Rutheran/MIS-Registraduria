@@ -15,7 +15,7 @@ from Controladores.ControladorResultado import ControladorResultado
 controladorCandidato = ControladorCandidato()
 controladorPartido = ControladorPartido()
 controladorMesa = ControladorMesa()
-miControladorResultado=ControladorResultado()
+ControladorResultado = ControladorResultado()
 
 
 app = Flask(__name__)
@@ -147,29 +147,29 @@ def eliminarPartidonto(id):
 
 @app.route("/resultado",methods=['GET'])
 def getResultadoes():
-    json=miControladorResultado.index()
+    json=ControladorResultado.index()
     return jsonify(json)
 
 @app.route("/resultado/<string:id>",methods=['GET'])
 def getResultado(id):
-    json=miControladorResultado.show(id)
+    json=ControladorResultado.show(id)
     return jsonify(json)
 
 @app.route("/resultado/partido/<string:id_partido>/mesa/<string:id_mesa>",methods=['POST'])
 def crearResultado(id_partido,id_mesa):
     data = request.get_json()
-    json=miControladorResultado.create(data,id_partido,id_mesa)
+    json=ControladorResultado.create(data,id_partido,id_mesa)
     return jsonify(json)
 
 @app.route("/resultado/<string:id_resultado>/partido/<string:id_partido>/mesa/<string:id_mesa>",methods=['PUT'])
 def modificarResultado(id_resultado,id_partido,id_mesa):
     data = request.get_json()
-    json=miControladorResultado.update(id_resultado,data,id_partido,id_mesa)
+    json=ControladorResultado.update(id_resultado,data,id_partido,id_mesa)
     return jsonify(json)
 
 @app.route("/resultado/<string:id_resultado>",methods=['DELETE'])
 def eliminarResultado(id_resultado):
-    json=miControladorResultado.delete(id_resultado)
+    json=ControladorResultado.delete(id_resultado)
     return jsonify(json)
 
 
