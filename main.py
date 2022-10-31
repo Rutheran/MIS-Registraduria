@@ -9,11 +9,13 @@ import certifi
 from Controladores.ControladorCandidato import ControladorCandidato
 from Controladores.ControladorPartido import ControladorPartido
 from Controladores.ControladorMesa import ControladorMesa
+from Controladores.ControladorResultado import ControladorResultado
 
 
 controladorCandidato = ControladorCandidato()
 controladorPartido = ControladorPartido()
 controladorMesa = ControladorMesa()
+miControladorResultado=ControladorResultado()
 
 
 app = Flask(__name__)
@@ -105,11 +107,6 @@ def eliminarMesa(id):
     json=controladorMesa.delete(id)
     return jsonify(json)
 
-@app.route("/mesa/<string:id>/partidos/<string:id_partido>", methods=['PUT'])
-def asignarPartidoAMesa(id, id_partido):
-    json= controladorMesa.asignarPartido(id,id_partido)
-    return jsonify(json)
-
 
 '''Partido'''
 
@@ -144,6 +141,37 @@ def modificarPartido(id):
 def eliminarPartidonto(id):
     json = controladorPartido.delete(id)
     return jsonify(json)
+
+
+'''Resultados'''
+
+@app.route("/resultado",methods=['GET'])
+def getResultadoes():
+    json=miControladorResultado.index()
+    return jsonify(json)
+
+@app.route("/resultado/<string:id>",methods=['GET'])
+def getResultado(id):
+    json=miControladorResultado.show(id)
+    return jsonify(json)
+
+@app.route("/resultado/partido/<string:id_partido>/mesa/<string:id_mesa>",methods=['POST'])
+def crearResultado(id_partido,id_mesa):
+    data = request.get_json()
+    json=miControladorResultado.create(data,id_partido,id_mesa)
+    return jsonify(json)
+
+@app.route("/resultado/<string:id_resultado>/partido/<string:id_partido>/mesa/<string:id_mesa>",methods=['PUT'])
+def modificarResultado(id_resultado,id_partido,id_mesa):
+    data = request.get_json()
+    json=miControladorResultado.update(id_resultado,data,id_partido,id_mesa)
+    return jsonify(json)
+
+@app.route("/resultado/<string:id_resultado>",methods=['DELETE'])
+def eliminarResultado(id_resultado):
+    json=miControladorResultado.delete(id_resultado)
+    return jsonify(json)
+
 
 
 if __name__ == '__main__':
